@@ -1,13 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
+// import Greet from './components/Greet';
+// import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
+import Message from './components/Message';
 
 function App() {
   return (
     <div className="App">
+      { /*
       <Greet name='Bruce'>
         <p>This is children props</p>
       </Greet>
@@ -17,7 +19,8 @@ function App() {
         <p>This is children props</p>
       </Welcome>
       <Welcome name='Clark'/>
-      <Welcome name='Diana'/>
+      */}
+      <Message/>
     </div>
   );
 }
