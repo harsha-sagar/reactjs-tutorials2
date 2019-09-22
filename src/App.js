@@ -9,9 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <UserProvider value = 'Harsha'>
-          <ComponentC />
-        </UserProvider>
+        <ComponentC />
       </div>
     );
   }
