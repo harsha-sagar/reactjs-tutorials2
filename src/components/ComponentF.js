@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { UserConsumer } from './UserContext';
+import UserContext from './UserContext';
 
 class ComponentF extends Component {
 	render() {
@@ -7,12 +8,14 @@ class ComponentF extends Component {
 			<UserConsumer>
 				{
 					(userName) => {
-						return <div>Hello { userName }</div>
+						return <div>Hello { this.context }</div>
 					}
 				}
 			</UserConsumer>
 		);
 	}
 }
+
+ComponentF.contextType = UserContext;
 
 export default ComponentF;
