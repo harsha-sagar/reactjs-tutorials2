@@ -18,7 +18,7 @@ class WithCounterTwo extends Component {
   render() {
     return (
       <div>
-        { this.props.render(this.state.count, this.incrementCounter) }      
+        { this.props.children(this.state.count, this.incrementCounter) }      
       </div>
     );
   }
