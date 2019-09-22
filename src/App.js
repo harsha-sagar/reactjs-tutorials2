@@ -2,15 +2,20 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import WithCounterTwo from './components/WithCounterTwo';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <ClickCounter name='Harsha'/>
-        <HoverCounter name='Sagar'/>
+        <WithCounterTwo render = { (count, incrementCounter) => (
+          <ClickCounterTwo count = { count } incrementCounter = { incrementCounter } />
+        )} />
+        <WithCounterTwo render = { (count, incrementCounter) => (
+          <HoverCounterTwo count = { count } incrementCounter = { incrementCounter } />
+        )} />
       </div>
     );
   }
