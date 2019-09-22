@@ -20,7 +20,7 @@ const WithCounter = (OriginalComponent) => {
 
 		render() {
 			const { count } = this.state;
-			return <OriginalComponent count = {this.state.count} incrementCounter = {this.incrementCounter} /> ;
+			return <OriginalComponent count = {this.state.count} incrementCounter = {this.incrementCounter} {...this.props} /> ;
 		}
 	}
 	return EnhancedComponent;
