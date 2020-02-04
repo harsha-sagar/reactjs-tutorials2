@@ -1,19 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Greet4 from './components/Greet4';
+import Welcome1 from './components/Welcome1';
 
 function App() {
   return (
     <div className="App">
-
-      <Greet4 name='Harsha'>
-        <p>Child of component</p>
-      </Greet4>
-      <Greet4 name='Sagar'>
+      <Welcome1 name='Harsha'>
+        <p>Child of Welcome component</p>
+      </Welcome1>
+      <Welcome1 name='Sagar'>
         <button>click</button>
-      </Greet4>
-      <Greet4 name='Mamatha' />
+      </Welcome1>
+      <Welcome1 name='Mamatha' />
     </div>
   );
 }
