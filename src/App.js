@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Greet1 from './components/Greet1';
-import Greet2 from './components/Greet2';
+import Greet3 from './components/Greet3';
 
 function App() {
   return (
     <div className="App">
-      {/* <Greet1 /> */}
-      <Greet2 />
+      <Greet3 name='Harsha' />
+      <Greet3 name='Sagar' />
+      <Greet3 name='Mamatha' />
     </div>
   );
 }
