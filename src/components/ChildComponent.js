@@ -5,14 +5,14 @@ class ChildComponent extends Component {
     super();
   
     this.state = {
-       name: 'Parent'
+       name: 'Child'
     };
   }
   
   render() {
     return (
       <div>
-          <button onClick={this.props.greetHandler}>greet</button>
+          <button onClick={() => {this.props.greetHandler(this.state.name)}}>greet</button>
       </div>
     )
   }
