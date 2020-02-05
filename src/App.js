@@ -2,15 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// import CounterFour from './components/CounterFour';
-import CounterFive from './components/CounterFive';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
-      {/* <CounterFour /> */}
-      <CounterFive />
-      </div>
+      <ParentComponent />
+    </div>
   );
 }
 
